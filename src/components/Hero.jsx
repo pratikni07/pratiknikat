@@ -1,7 +1,8 @@
-import React from "react";
-import herovideo from "../assets/video/herovideo1.mp4";
+import React, { Suspense, lazy } from "react";
 import ButtonWithHoverEffect from "./Buttons/ButtonWithHoverEffect";
 
+// Lazy load the video component
+const LazyVideo = lazy(() => import("./LazyVideo"));
 const Hero = () => {
   return (
     <div className="bg-[#F9F5F2] min-h-[80vh] md:h-[85vh]">
@@ -29,16 +30,13 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full md:w-[50%] flex justify-center md:justify-end">
-            <video
-              className="w-full object-cover rounded-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
+            <Suspense
+              fallback={
+                <div className="w-full h-[300px] bg-gray-200 animate-pulse"></div>
+              }
             >
-              <source src={herovideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              <LazyVideo />
+            </Suspense>
           </div>
         </div>
       </section>
