@@ -119,11 +119,11 @@ const WhatIDo = () => {
                 <p className="text-gray-700 mb-6 text-center md:text-left">
                   {service.description}
                 </p>
-                <div className="text-center md:text-left">
+                {/* <div className="text-center md:text-left">
                   <button className="text-[#52514E] font-semibold hover:underline">
                     {service.cta}
                   </button>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
