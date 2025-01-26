@@ -1,0 +1,56 @@
+/* Import Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define Fonts */
+@font-face {
+  font-family: "Unigeo";
+  src: url("/fonts/Unigeo32-Medium-trial-BF6556e1d9d0a4a.ttf")
+    format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unigeo";
+  src: url("/fonts/Unigeo64-Extrabold-Italic-trial-BF6556e1da3d3e1.ttf")
+    format("truetype");
+  font-weight: 800; /* Extrabold weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Unigeo";
+  src: url("/fonts/Unigeo32-Extrabold-trial-BF6556e1d98283c.ttf")
+    format("truetype");
+  font-weight: 800; /* Extrabold weight */
+  font-style: normal; /* This assumes the third font is normal weight */
+}
+
+/* Global Reset */
+body {
+  cursor: url("/cursor/c5.png"), auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use Fonts */
+.unigeo {
+  font-family: "Unigeo", sans-serif;
+  font-weight: 500; /* Medium weight */
+}
+
+.unigeo-medium {
+  font-family: "Unigeo", sans-serif;
+  font-weight: 500; /* Medium weight */
+}
+
+.unigeo-large {
+  font-family: "Unigeo", sans-serif;
+  font-weight: 800; /* Extrabold weight */
+}
