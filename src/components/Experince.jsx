@@ -1,6 +1,6 @@
 import React from "react";
-import experince from "../assets/webexperience.png";
-import mobileview from "../assets/mobileview.png";
+import experince from "../assets/banner.png";
+import mobileview from "../assets/bannermobile.png";
 
 const Experience = () => {
   return (
